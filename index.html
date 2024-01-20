@@ -32,10 +32,13 @@
                         <a href="#home" class="nav__link">Home</a>
                     </li>
                     <li class="nav__item">
+                        <a href="#gallery" class="nav__link">Gallery</a>
+                    </li>
+                    <li class="nav__item">
                         <a href="#specs" class="nav__link">Specs</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#case" class="nav__link">Case</a>
+                        <a href="#features" class="nav__link">Features</a>
                     </li>
                     <li class="nav__item">
                         <a href="#products" class="nav__link">Produts</a>
@@ -55,7 +58,8 @@
     </header>
 
     <main class="main">
-        <section class="home section">
+        <!-- home -->
+        <section class="home section" id="home">
             <div class="home__container container-1 grid">
                 <div>
                     <img src="img/headphone_black/4.JBL_Tune_770NC_Product Image_Left_Black.png" alt=""
@@ -95,11 +99,12 @@
             </div>
         </section>
 
-        <section class="section gallery">
+        <!-- gallery -->
+        <section class="section gallery" id="gallery">
             <div class="container-1">
                 <h2 class="section__title section__title-gradient">Gallery</h2>
                 <span class="gallery_description">Where style harmonizes with sound perfection and cutting-edge tech,
-                    immerse yourself in sleek design and elevate your audio experience.</span>
+                    immerse yourself into the sleek design and elevate your audio experience.</span>
                 <div class="gallery__container">
 
                     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
@@ -166,6 +171,83 @@
                 <div>
                     <img src="img/headphone_black/1.JBL_Tune_770NC_Product Image_Hero_Black.png" alt=""
                         class="specs__img">
+                </div>
+            </div>
+        </section>
+
+        <!-- features -->
+        <section class="features section" id="features">
+            <h2 class="section__title section__title-gradient">Features</h2>
+
+            <div class="container-1">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card features__card">
+                            <img class="features__img" src="img/icons/My JBL Headphones.png" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title features__title">Customize your listening experience</h5>
+                                <p class="card-text features__description">Download the free JBL Headphones App to
+                                    tailor the sound to your taste by choosing one of the pre-set EQ modes or adjusting
+                                    the EQ curve according to your content, your style, your taste. Voice Prompts in
+                                    your language guide you through the Tune 770NC's other features.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card features__card">
+                            <img class="features__img" src="img/icons/icon_JBL Hands-Free_Voice_Control.png"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title features__title">Hands-free calls with VoiceAware</h5>
+                                <p class="card-text features__description">Easily control your sound and manage your
+                                    calls from your headphones with the convenient buttons on the ear-cup. Hear your
+                                    voice while you're talking, with the help of VoiceAware.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card features__card">
+                            <img class="features__img" src="img/icons/icon_JBL_Battery_Generic.png" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title features__title">Up to 70H* battery life with speed charge</h5>
+                                <p class="card-text features__description">For long-lasting fun, listen wirelessly for
+                                    up to 44 hours and recharge the battery in as little as 2 hours with the convenient
+                                    Type-C USB cable. A quick 5-minute recharge gives you 3 additional hours of music.
+                                    *Battery life: BT on / ANC off</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card features__card">
+                            <img class="features__img" src="img/icons/icon_JBL_Multipoint_Connectivity.png"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title features__title">Multi-Point connection</h5>
+                                <p class="card-text features__description">Effortlessly switch from one Bluetooth®
+                                    device to another. Jump from a video on your tablet to a call on your mobile phone,
+                                    and never miss a moment.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card features__card">
+                            <img class="features__img" src="img/icons/icon_JBL_Foldable.png" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title features__title">Lightweight, comfortable and foldable design</h5>
+                                <p class="card-text features__description">The lightweight materials and soft ear
+                                    cushions with a padded headband make the headphones comfortable to wear for extended
+                                    periods. The foldable design makes it convenient to carry them anywhere-anytime you
+                                    want music.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

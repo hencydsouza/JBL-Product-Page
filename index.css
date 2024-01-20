@@ -264,4 +264,24 @@ img {
   position: absolute;
   top: 2rem;
   right: -4rem;
+}
+
+.features__img {
+  width: 70px;
+  margin: 1.2rem auto;
+  margin-top: 2.5rem;
+}
+.features__card {
+  background-color: #181a1b;
+}
+.features__title {
+  text-align: center;
+  color: #f2f2f3;
+  font-size: 500;
+  font-weight: 700;
+}
+.features__description {
+  text-align: center;
+  color: #bdc0c2;
+  font-size: 0.8rem;
 }/*# sourceMappingURL=index.css.map */

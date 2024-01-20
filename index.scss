@@ -297,3 +297,30 @@ img {
         right: -4rem;
     }
 }
+
+// features
+.features {
+    &__img {
+        width: 70px;
+        margin: 1.2rem auto;
+        margin-top: 2.5rem;
+    }
+
+    &__card {
+        background-color: $container-color;
+    }
+
+    &__title {
+        text-align: center;
+        color: $title-color;
+        font-size: $font-medium;
+        font-weight: 700;
+    }
+
+    &__description {
+        text-align: center;
+        color: $text-color;
+        // font-size: $normal-font-size;
+        font-size: 0.8rem;
+    }
+}
