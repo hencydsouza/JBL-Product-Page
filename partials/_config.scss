@@ -16,17 +16,17 @@ $primary-950: #450b05;
 $header-height: 3rem;
 
 $hue-color: 206;
-$black-color: hsl(var(--hue-color), 4%, 4%);
-$black-color-alt: hsl(var(--hue-color), 4%, 8%);
-$title-color: hsl(var(--hue-color), 4%, 95%);
-$text-color: hsl(var(--hue-color), 4%, 75%);
-$text-color-light: hsl(var(--hue-color), 4%, 65%);
+$black-color: #0a0a0b;
+$black-color-alt: #141515;
+$title-color: #f2f2f3;
+$text-color: #bdc0c2;
+$text-color-light: #a2a6a9;
 $white-color: #FFF;
 $body-color: #0f0f10;
-$container-color: hsl(var(--hue-color), 4%, 10%);
-$text-gradient: linear-gradient($primary-300, $primary-500);
-$scroll-thumb-color: hsl(var(--hue-color), 4%, 16%);
-$scroll-thumb-color-alt: hsl(var(--hue-color), 4%, 20%);
+$container-color: #181a1b;
+$text-gradient: linear-gradient($primary-300, $primary-600);
+$scroll-thumb-color: #27292a;
+$scroll-thumb-color-alt: #313335;
 
 $mb-0-5: .5rem;
 $mb-0-75: .75rem;
