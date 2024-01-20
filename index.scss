@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import 'partials/config';
+@import 'partials/responsive';
+
+body {
+    margin: $header-height 0 0 0;
+    font-family: $body-font;
+    font-size: $normal-font-size;
+    background-color: $body-color;
+    color: $text-color;
+}
+
+h1,
+h2,
+h3 {
+    color: $title-color;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+input {
+    border: none;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+// reusable classes
+
+.section {
+    padding: 4rem 0 2rem;
+
+    &__title {
+        font-size: $big-font-size;
+        text-align: center;
+        margin-bottom: $mb-2-5;
+    }
+
+    &__title-gradient {
+        background: $text-gradient;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+}
+
+// layout
+
+.main {
+    overflow: hidden;
+}
+
+.container1 {
+    max-width: 968px;
+    margin-left: $mb-1-5;
+    margin-right: $mb-1-5;
+}
+
+.grid {
+    display: grid;
+}
+
+// header & nav
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: transparent;
+
+    .nav {
+        height: $header-height;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // margin: auto;
+
+        &__logo {
+            display: flex;
+            width: 2rem;
+        }
+
+        &__toggle {
+            font-size: 2rem;
+            cursor: pointer;
+            color: $white-color;
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 1rem;
+        }
+
+        &__link {
+            color: $white-color;
+            font-size: $h2-font-size;
+            text-transform: uppercase;
+            font-weight: $font-semi-bold;
+            background: $text-gradient;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+
+            &:hover {
+                background: $white-color;
+                color: transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+            }
+        }
+
+        &__close {
+            position: absolute;
+            font-size: 2rem;
+            top: 1rem;
+            right: 1rem;
+            color: $white-color;
+            cursor: pointer;
+        }
+    }
+}
+
+// show menu
+.show-menu {
+    top: 0;
+}

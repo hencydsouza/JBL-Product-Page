@@ -1,0 +1,82 @@
+$primary-color: #e53405;
+$secondary-color: #444444;
+
+$primary-50: #fff4ec;
+$primary-100: #ffe7d4;
+$primary-200: #ffcba7;
+$primary-300: #ffa770;
+$primary-400: #ff7636;
+$primary-500: #ff520f;
+$primary-600: #e53405;
+$primary-700: #c82506;
+$primary-800: #9e1f0e;
+$primary-900: #7f1c0f;
+$primary-950: #450b05;
+
+$header-height: 3rem;
+
+$hue-color: 206;
+$black-color: hsl(var(--hue-color), 4%, 4%);
+$black-color-alt: hsl(var(--hue-color), 4%, 8%);
+$title-color: hsl(var(--hue-color), 4%, 95%);
+$text-color: hsl(var(--hue-color), 4%, 75%);
+$text-color-light: hsl(var(--hue-color), 4%, 65%);
+$white-color: #FFF;
+$body-color: #0f0f10;
+$container-color: hsl(var(--hue-color), 4%, 10%);
+$text-gradient: linear-gradient($primary-300, $primary-500);
+$scroll-thumb-color: hsl(var(--hue-color), 4%, 16%);
+$scroll-thumb-color-alt: hsl(var(--hue-color), 4%, 20%);
+
+$mb-0-5: .5rem;
+$mb-0-75: .75rem;
+$mb-1: 1rem;
+$mb-1-5: 1.5rem;
+$mb-2: 2rem;
+$mb-2-5: 2.5rem;
+
+$font-medium: 500;
+$font-semi-bold: 600;
+
+$body-font: 'sora', sans-serif;
+$biggest-font-size: 5rem;
+$bigger-font-size: 3.5rem;
+$big-font-size: 2.5rem;
+$h2-font-size: 1.25rem;
+$h3-font-size: 1.125rem;
+$normal-font-size: .938rem;
+$small-font-size: .813rem;
+$smaller-font-size: .75rem;
+$text-line-height: 2rem;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@mixin transition-ease {
+    transition: all 0.4s ease-in-out;
+}
+
+@mixin media-md {
+    @media screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (max-width: 968px) {
+        @content;
+    }
+}
+
+@mixin media-xl {
+    @media screen and (min-width: 1600px) {
+        @content;
+    }
+}

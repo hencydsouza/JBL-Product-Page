@@ -1,0 +1,22 @@
+@include media-md {
+    .nav__menu {
+        position: fixed;
+        background-color: $body-color;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        padding: 4rem 0 3rem;
+        @include transition-ease;
+    }
+}
+
+@include media-lg {
+    $biggest-font-size: 7.5rem;
+    $bigger-font-size: 4.5rem;
+    $big-font-size: 4rem;
+    $h2-font-size: 1.5rem;
+    $h3-font-size: 1.25rem;
+    $normal-font-size: 1rem;
+    $small-font-size: .875rem;
+    $smaller-font-size: .813rem;
+}
