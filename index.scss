@@ -308,6 +308,7 @@ img {
 
     &__card {
         background-color: $container-color;
+        transition: .2s;
     }
 
     &__title {
@@ -322,5 +323,106 @@ img {
         color: $text-color;
         // font-size: $normal-font-size;
         font-size: 0.8rem;
+    }
+}
+
+// personalize
+.personalize {
+    &__container {
+        position: relative;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__data {
+        padding: 5rem 0 3rem;
+    }
+
+    &__img {
+        width: 250px;
+        // position: absolute;
+        // left: -2rem;
+    }
+
+    &__description {
+        margin-bottom: $mb-1-5;
+        line-height: $text-line-height;
+    }
+}
+
+// discount
+.discount {
+    &__container {
+        position: relative;
+        background-color: $container-color;
+        padding: 2rem 1.5rem;
+        border-radius: .75rem;
+    }
+
+    &__title {
+        font-size: $h3-font-size;
+        margin-bottom: $mb-0-75;
+    }
+
+    &__description {
+        margin-bottom: $mb-1;
+    }
+
+    &__img {
+        width: 300px;
+        position: absolute;
+        top: 4rem;
+        right: -8rem;
+    }
+}
+
+// products
+.products {
+    &__line {
+        line-height: 4rem;
+    }
+
+    &__container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem 1.5rem;
+        padding: 3rem;
+    }
+
+    &__card {
+        position: relative;
+        height: 132px;
+        background-color: $container-color;
+        padding: .75rem;
+        border-radius: .5rem;
+        display: grid;
+    }
+
+    &__img {
+        width: 100px;
+        position: absolute;
+        inset: 0;
+        margin-left: auto;
+        margin-right: auto;
+        top: -3rem;
+    }
+
+    &__content {
+        align-self: flex-end;
+    }
+
+    &__title,
+    &__price {
+        font-size: $small-font-size;
+    }
+
+    &__price {
+        font-weight: $font-semi-bold;
+    }
+
+    &__button {
+        position: absolute;
+        right: .5rem;
+        bottom: .5rem;
+        padding: .5rem;
+        border-radius: .35rem;
     }
 }

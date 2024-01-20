@@ -273,6 +273,7 @@ img {
 }
 .features__card {
   background-color: #181a1b;
+  transition: 0.2s;
 }
 .features__title {
   text-align: center;
@@ -284,4 +285,80 @@ img {
   text-align: center;
   color: #bdc0c2;
   font-size: 0.8rem;
+}
+
+.personalize__container {
+  position: relative;
+  grid-template-columns: repeat(2, 1fr);
+}
+.personalize__data {
+  padding: 5rem 0 3rem;
+}
+.personalize__img {
+  width: 250px;
+}
+.personalize__description {
+  margin-bottom: 1.5rem;
+  line-height: 2rem;
+}
+
+.discount__container {
+  position: relative;
+  background-color: #181a1b;
+  padding: 2rem 1.5rem;
+  border-radius: 0.75rem;
+}
+.discount__title {
+  font-size: 1.125rem;
+  margin-bottom: 0.75rem;
+}
+.discount__description {
+  margin-bottom: 1rem;
+}
+.discount__img {
+  width: 300px;
+  position: absolute;
+  top: 4rem;
+  right: -8rem;
+}
+
+.products__line {
+  line-height: 4rem;
+}
+.products__container {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem 1.5rem;
+  padding: 3rem;
+}
+.products__card {
+  position: relative;
+  height: 132px;
+  background-color: #181a1b;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  display: grid;
+}
+.products__img {
+  width: 100px;
+  position: absolute;
+  inset: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: -3rem;
+}
+.products__content {
+  align-self: flex-end;
+}
+.products__title, .products__price {
+  font-size: 0.813rem;
+}
+.products__price {
+  font-weight: 600;
+}
+.products__button {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.35rem;
 }/*# sourceMappingURL=index.css.map */
