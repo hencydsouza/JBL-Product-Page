@@ -686,4 +686,7 @@ img {
   .footer__copy {
     margin-top: 9rem;
   }
+  .gallery__container {
+    width: 75%;
+  }
 }/*# sourceMappingURL=index.css.map */

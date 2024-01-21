@@ -142,18 +142,6 @@ img {
     }
 }
 
-// @media screen and (min-width: 767px) {
-//     .nav__menu {
-//         position: fixed;
-//         background-color: $body-color;
-//         top: -100%;
-//         left: 0;
-//         width: 100%;
-//         padding: 4rem 0 3rem;
-//         @include transition-ease;
-//     }
-// }
-
 // show menu
 .show-menu {
     top: 0;
@@ -866,6 +854,12 @@ img {
 
         &__copy {
             margin-top: 9rem;
+        }
+    }
+
+    .gallery {
+        &__container {
+            width: 75%;
         }
     }
 }

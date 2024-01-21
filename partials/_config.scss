@@ -74,9 +74,3 @@ html {
         @content;
     }
 }
-
-@mixin media-xl {
-    @media screen and (min-width: 1600px) {
-        @content;
-    }
-}

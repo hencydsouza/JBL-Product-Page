@@ -59,23 +59,3 @@ function scrollActive(){
     })
 }
 window.addEventListener('scroll', scrollActive)
-
-// scroll animation
-const sr = ScrollReveal({
-    distance: '60px',
-    duration: 2500,
-    delay: 400,
-    // reset: true
-})
-
-sr.reveal(`.home__header, .section__title`, { delay: 600 })
-sr.reveal(`.home__footer`, { delay: 700 })
-sr.reveal(`.home__img`, { delay: 900, origin: 'top' })
-
-sr.reveal(`.sponsor__img, .products__card, .footer__logo, .footer__content, .footer__copy, .gallery_description`, { origin: 'top', interval: 100 })
-sr.reveal(`.gallery__container`, { delay: 900, origin: 'bottom'})
-sr.reveal(`.specs__data, .discount__animate`, { origin: 'left', interval: 100 })
-sr.reveal(`.features__data`, { origin: 'bottom', interval: 100 })
-sr.reveal(`.specs__img, .discount__img`, { origin: 'right' })
-sr.reveal(`.personalize__img`, { origin: 'top' })
-sr.reveal(`.personalize__data`)
