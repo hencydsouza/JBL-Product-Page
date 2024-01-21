@@ -121,6 +121,7 @@ img {
             color: transparent;
             -webkit-background-clip: text;
             background-clip: text;
+            @include transition-ease;
 
             &:hover {
                 background: $white-color;
@@ -149,6 +150,14 @@ img {
 // change background header
 .scroll-header {
     background-color: $body-color;
+}
+
+// active link
+.active-link {
+    background: $white-color;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 // home
@@ -212,7 +221,7 @@ img {
     color: $white-color;
     padding: 1rem 1.25rem;
     border-radius: .5rem;
-    transition: .3s;
+    @include transition-ease;
 
     &:hover {
         background-color: $black-color-alt;
@@ -233,6 +242,7 @@ img {
 .sponsor {
     &__img {
         width: 90px;
+        margin: auto;
     }
 
     &__container {
@@ -308,7 +318,6 @@ img {
 
     &__card {
         background-color: $container-color;
-        transition: .2s;
     }
 
     &__title {
@@ -424,5 +433,132 @@ img {
         bottom: .5rem;
         padding: .5rem;
         border-radius: .35rem;
+    }
+}
+
+// footer
+.footer {
+    &__container {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        row-gap: 2rem;
+    }
+
+    &__logo {
+        width: 2rem;
+    }
+
+    &__title {
+        font-size: $h3-font-size;
+        font-weight: $font-medium;
+        margin-bottom: $mb-1;
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        row-gap: .5rem;
+        padding: 0;
+    }
+
+    &__link {
+        color: $text-color;
+
+        &:hover {
+            color: $white-color;
+        }
+    }
+
+    &__form {
+        display: flex;
+        column-gap: .5rem;
+        background-color: $container-color;
+        padding: .5rem .75rem;
+        border-radius: .5rem;
+        margin-bottom: $mb-2;
+    }
+
+    &__input {
+        background-color: $container-color;
+        width: 90%;
+        color: $white-color;
+
+        &::placeholder {
+            color: $text-color;
+            font-size: $normal-font-size;
+            font-family: $body-font;
+        }
+    }
+
+    &__social {
+        display: flex;
+        column-gap: 1.25rem;
+
+        &-link {
+            display: inline-flex;
+            color: $white-color;
+            background-color: $container-color;
+            padding: .5rem;
+            border-radius: .25rem;
+            font-size: 1rem;
+
+            &:hover {
+                background-color: $black-color;
+            }
+        }
+    }
+
+    &__copy {
+        margin-top: 5rem;
+        text-align: center;
+
+        &-link {
+            font-size: $smaller-font-size;
+            color: $text-color-light;
+        }
+    }
+}
+
+// scroll up
+.scroll {
+    &__up {
+        position: fixed;
+        right: 1rem;
+        bottom: -20%;
+        display: flex;
+        background-color: $container-color;
+        border-radius: .25rem;
+        padding: .45rem;
+        opacity: 9;
+        z-index: 100;
+        @include transition-ease;
+    }
+
+    &__icon {
+        color: $white-color;
+        font-size: 1.35rem;
+
+        &:hover {
+            background-color: $black-color;
+            opacity: 1;
+        }
+    }
+}
+
+.show-scroll {
+    bottom: 5rem;
+}
+
+// scroll bar
+::-webkit-scrollbar {
+    width: .60rem;
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $scroll-thumb-color;
+    border-radius: .5rem;
+
+    &:hover {
+        background-color: $scroll-thumb-color-alt;
     }
 }
