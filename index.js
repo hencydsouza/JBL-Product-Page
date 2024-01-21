@@ -1,71 +1,66 @@
-/*=============== SHOW MENU ===============*/
+// show menu
 const navMenu = document.getElementById('nav-menu'),
     navToggle = document.getElementById('nav-toggle'),
     navClose = document.getElementById('nav-close')
 
-/*===== MENU SHOW =====*/
-/* Validate if constant exists */
 if (navToggle) {
     navToggle.addEventListener('click', () => {
         navMenu.classList.add('show-menu')
     })
 }
 
-/*===== MENU HIDDEN =====*/
-/* Validate if constant exists */
+// hidden menu
 if (navClose) {
     navClose.addEventListener('click', () => {
         navMenu.classList.remove('show-menu')
     })
 }
 
-/*=============== REMOVE MENU MOBILE ===============*/
+// remove menu - mobile
 const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction() {
     const navMenu = document.getElementById('nav-menu')
-    // When we click on each nav__link, we remove the show-menu class
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-/*=============== CHANGE BACKGROUND HEADER ===============*/
+// change background header
 function scrollHeader() {
     const header = document.getElementById('header')
-    // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
     if (this.scrollY >= 50) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
 
-/*=============== SHOW SCROLL UP ===============*/
+// show scroll up
 function scrollUp() {
     const scrollUp = document.getElementById('scroll-up');
-    // When the scroll is higher than 200 viewport height, add the show-scroll class to the a tag with the scroll-top class
     if (this.scrollY >= 200) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
 
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+// scroll sections active link
 const sections = document.querySelectorAll('section[id]')
+console.log(sections)
 
-function scrollActive() {
+function scrollActive(){
     const scrollY = window.pageYOffset
 
-    sections.forEach(current => {
+    sections.forEach(current =>{
         const sectionHeight = current.offsetHeight
         const sectionTop = current.offsetTop - 50;
         sectionId = current.getAttribute('id')
 
-        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
-        } else {
+        }else{
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
         }
     })
 }
 window.addEventListener('scroll', scrollActive)
 
-/*=============== SCROLL REVEAL ANIMATION ===============*/
+// scroll animation
 const sr = ScrollReveal({
     distance: '60px',
     duration: 2500,
@@ -77,8 +72,10 @@ sr.reveal(`.home__header, .section__title`, { delay: 600 })
 sr.reveal(`.home__footer`, { delay: 700 })
 sr.reveal(`.home__img`, { delay: 900, origin: 'top' })
 
-sr.reveal(`.sponsor__img, .products__card, .footer__logo, .footer__content, .footer__copy`, { origin: 'top', interval: 100 })
+sr.reveal(`.sponsor__img, .products__card, .footer__logo, .footer__content, .footer__copy, .gallery_description`, { origin: 'top', interval: 100 })
+sr.reveal(`.gallery__container`, { delay: 900, origin: 'bottom'})
 sr.reveal(`.specs__data, .discount__animate`, { origin: 'left', interval: 100 })
+sr.reveal(`.features__data`, { origin: 'bottom', interval: 100 })
 sr.reveal(`.specs__img, .discount__img`, { origin: 'right' })
-sr.reveal(`.case__img`, { origin: 'top' })
-sr.reveal(`.case__data`)
+sr.reveal(`.personalize__img`, { origin: 'top' })
+sr.reveal(`.personalize__data`)
